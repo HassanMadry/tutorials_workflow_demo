@@ -97,7 +97,7 @@ def tutorial_detail(request, pk):
         tutorial.delete()
         return JsonResponse({'message': 'Tutorial was deleted successfully!'},
                             status=status.HTTP_204_NO_CONTENT)
-
+# 
 
 @api_view(['GET'])
 def tutorial_list_published(request):
